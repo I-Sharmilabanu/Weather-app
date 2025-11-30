@@ -43,13 +43,13 @@ function Weather() {
             <div className='bg-gradient-to-b from-gray-300 to-gray-500 p-20 mx-auto max-w-xl items-center shadow-xl h-4/5'>
                 <div>
                     <h1 className='text-black font-bold animate-pulse duration-100 text-lg md:text-2xl'>Weather Report</h1>
-                    <p className='text-black font-medium mt-3 text-sm transform translate-x-3   duration-200'>you get  weather condition world wide..</p>
+                    <p className='text-black font-medium mt-4 text-sm transform translate-x-3   duration-200'>you get  weather condition world wide..</p>
 
                 </div>
-                <div >
-                    <input type='text' placeholder='please enter you city. . .' className='border rounded-full md:p-3 mt-3 shadow-xl outline-none'
+                <div className='flex items-center justify-center mt-7' >
+                    <input type='text' placeholder='please enter you city. . .' className='border rounded-full p-1 md:p-3  shadow-xl outline-none'
                         onChange={handleCity} />
-                    <button className='text-white p-1 md:p-3 ml-3 bg-gray-600 rounded-full '
+                    <button className='text-white p-1 md:p-3  ml-3 bg-gray-600 rounded-lg '
                         onClick={getWeather}>search</button>
 
                 </div>
@@ -67,13 +67,13 @@ function Weather() {
                 </div>
 
                 <div className='grid grid-cols-2 text-white gap-20 mt-10 text-sm md:text-lg'>
-                    <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>⛅Weather :   </span>
+                    <p className=' md:bg-white/20 rounded-lg '><span className='text-black font-medium'>⛅Weather :   </span>
                         <span className='text-yellow-400'>{weather}</span></p>
-                    <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>🔥Temprature : </span>
+                    <p className=' md:bg-white/20 rounded-lg '><span className='text-black font-medium'>🔥Temprature : </span>
                         <span className='text-yellow-400'>{temp}</span></p>
-                    <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>💧Humitidy : </span>
+                    <p className=' md:bg-white/20 rounded-lg '><span className='text-black font-medium'>💧Humitidy : </span>
                         <span className='text-yellow-400'>{humidity}</span></p>
-                    <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>📝Description : </span>
+                    <p className=' md:bg-white/20 rounded-lg '><span className='text-black font-medium'>📝Description : </span>
                         <span className='text-yellow-400'>{desc}</span></p>
 
 
