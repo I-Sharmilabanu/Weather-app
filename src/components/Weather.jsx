@@ -81,23 +81,23 @@ function Weather() {
                     </h1>
                 </div>
 
-                <div className='grid grid-cols-2 gap-6 mt-10 text-sm md:text-lg'>
-                    <p className='rounded-lg p-2 md:bg-white/20'>
+                <div className='grid grid-cols-2 gap-20 mt-10 text-sm md:text-lg'>
+                    <p className='rounded-lg  md:bg-white/20'>
                         <span className='text-black font-medium'>⛅ Weather : </span>
                         <span className='text-yellow-400'>{weather}</span>
                     </p>
 
-                    <p className='rounded-lg p-2 md:bg-white/20'>
+                    <p className='rounded-lg  md:bg-white/20'>
                         <span className='text-black font-medium'>🔥 Temperature : </span>
                         <span className='text-yellow-400'>{temp}</span>
                     </p>
 
-                    <p className='rounded-lg p-2 md:bg-white/20'>
+                    <p className='rounded-lg  md:bg-white/20'>
                         <span className='text-black font-medium'>💧 Humidity : </span>
                         <span className='text-yellow-400'>{humidity}</span>
                     </p>
 
-                    <p className='rounded-lg p-2 md:bg-white/20'>
+                    <p className='rounded-lg  md:bg-white/20'>
                         <span className='text-black font-medium'>📝 Description : </span>
                         <span className='text-yellow-400'>{desc}</span>
                     </p>
