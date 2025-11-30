@@ -40,16 +40,16 @@ function Weather() {
     }
     return (
         <div>
-            <div className='bg-gradient-to-b from-gray-300 to-gray-500   p-20 mx-auto max-w-xl items-center shadow-xl h-4/5'>
-                <div className='text-2xl'>
-                    <h1 className='text-black font-bold animate-pulse duration-100'>Weather Report</h1>
+            <div className='bg-gradient-to-b from-gray-300 to-gray-500 p-20 mx-auto max-w-xl items-center shadow-xl h-4/5'>
+                <div>
+                    <h1 className='text-black font-bold animate-pulse duration-100 text-lg md:text-2xl'>Weather Report</h1>
                     <p className='text-black font-medium mt-3 text-sm transform translate-x-3   duration-200'>you get  weather condition world wide..</p>
 
                 </div>
                 <div >
-                    <input type='text' placeholder='please enter you city. . .' className='border rounded-full p-3 mt-3 shadow-xl outline-none'
+                    <input type='text' placeholder='please enter you city. . .' className='border rounded-full md:p-3 mt-3 shadow-xl outline-none'
                         onChange={handleCity} />
-                    <button className='text-white p-2 ml-3 bg-gray-600 rounded-full '
+                    <button className='text-white p-1 md:p-3 ml-3 bg-gray-600 rounded-full '
                         onClick={getWeather}>search</button>
 
                 </div>
@@ -66,7 +66,7 @@ function Weather() {
                     </h1>
                 </div>
 
-                <div className='grid grid-cols-2 text-white gap-20 mt-10 '>
+                <div className='grid grid-cols-2 text-white gap-20 mt-10 text-sm md:text-lg'>
                     <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>⛅Weather :   </span>
                         <span className='text-yellow-400'>{weather}</span></p>
                     <p className=' bg-white/20 rounded-lg '><span className='text-black font-medium'>🔥Temprature : </span>
